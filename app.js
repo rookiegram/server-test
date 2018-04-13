@@ -7,7 +7,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const mongoose = require('mongoose');
 
-mongoose.connect(mongoose.connect(`mongodb://process.env.USER:process.env.PASSWORD@ds243049.mlab.com:43049/rookiegram`));
+mongoose.connect('mongodb://localhost/rookie-gram-dev');
 require('dotenv').config()
 
 var indexRouter = require('./routes/index');
