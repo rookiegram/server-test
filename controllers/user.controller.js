@@ -84,5 +84,11 @@ module.exports = {
         })
       }
     })
+  },
+
+  userInfo: (req, res) => {
+    res.status(200).json({
+      message: 'what do you want to know?'
+    })
   }
 }
